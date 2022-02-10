@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(22, 22, 22, 0.822);
+}
+.main-container{
+    display: grid;
+    grid-template-rows: 49rem 2fr 2fr 2fr 2fr 4fr 2fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-gap: 0.5rem;
+    height: 100vh;
+    /* grid-template-areas: 
+    "top-section"
+    "tv1"
+    "download-animation"
+    "tv2"
+    "child"
+    "quest"
+    "footer"; */
+    
+
+
+}
+
+#top-section{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/eb482c64-e879-4e88-9ddc-d839cb7d1232/d03a05fb-39a4-4594-b16c-ddc39f35f5bd/IN-en-20220131-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: wheat;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    /* grid-template-areas: "navbar" "story"; */
+
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.logo{
+    width: 180px;
+    padding: 25px 0 0 50px;
+}
+.nav-right{
+    float: right;
+    padding: 25px 50px 0 0;
+    gap: 35px;
+
+}
+.lang{
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid white;
+    width: 90px;
+
+}
+.lang-bg{
+    background-color: grey;
+}
+.btn{
+    padding: 10px;
+    background-color: red;
+    border: none;
+    width: 90px;
+    margin-left: 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+
+}
+
+.story{
+    /* background-color: red; */
+    margin: 10px 550px;
+
+    text-align: center;
+    text-shadow: grey;
+}
+.head-text{
+    font-size: 65px;
+    
+}
+.head-para{
+    font-size: 30px;
+    word-spacing: 4px;
+    padding-top: 20px;
+}
+.head-para2{
+    font-size: 20px;
+    padding-top: 30px;
+    color: white;
+}
+
+/* search bar  */
+.button-set{
+    width: 800px;
+    min-height: 6vh;
+    margin: 20px auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.search-btn{
+    width: 100%;
+    position: relative;
+    display: flex;
+    
+}
+.search-input{
+    height: 50px;
+    outline: none;
+    width: 80%;
+    position: absolute;
+    top: 30px;
+    border-radius: 3px;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+    
+}
+.search-label{
+    position: absolute;
+    /* margin-top: 50px; */
+    width: 100px;
+    color: grey;
+}
+.sbtn{
+    height: 69px;
+    width: 230px;
+    border: none;
+    margin-left: 600px;
+    background-color: red;
+    z-index: 1;
+    font-size: 30px;
+    color: white;
+}
+.search-input:focus + label {
+    transition: 200ms;
+    margin-top: -50px;
+    font-size: 14px;
+}
+
+
+/* section 1 */
+#section1{
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    z-index: 1;
+}
+.sec1-img-text{
+    color: white;
+    margin: 150px 70px 200px 350px;
+    /* background-color: red; */
+}
+.sec1-head{
+    font-size: 55px
+}
+.sec1-para{
+    font-size: 25px;
+    padding-top: 20px;
+    /* margin-left: 150px; */
+}
+.sec1-img{
+    width: 550px;
+}
+.sec1-vid{
+    position: relative;
+    top: -445px;
+    left: 70px;
+    width: 43%;
+    height: 70%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+
+
+
+/* section 2 */
+#download-animation{
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 450px;
+
+}
+.sec2-img-text{
+    color: white;
+    margin: 120px 350px 200px 70px;
+}
+.sec2-image{
+    width: 500px;
+    float: right;
+}
+.sec2-img{
+    margin-right: 150px;
+}
+
+
+
+/* section 3 */
+#tv2{
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 550px;
+    z-index: 1;
+}
+.sec3-img{
+    margin: 30px;
+}
+.sec3-image{
+    width: 600px;
+}
+.sec3-vid{
+    position: relative;
+    top: -550px;
+    left: 105px;
+    width: 42%;
+    height: 70%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+
+
+/* section 4 */
+#child{
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 550px;
+
+}
+.sec4-img{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.sec4-image{
+    float: right;
+    width: 500px;
+}
+
+
+/* section 5 */
+#quest{
+    background-color: #000000;
+    padding-top: 30px;
+}
+
+.query-head{
+    color: white;
+    margin: 50px auto;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.container{
+    width: 100%;
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.ques-item{
+    margin-bottom: 10px;
+    padding: 1rem;
+    
+}
+.ques-link{
+    margin-top: -2rem;
+    background-color: rgba(41, 40, 40, 0.685);
+    padding: 25px 10px;
+    height: 3 rem;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.89);
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.ques-link .close-outline{
+    display: none;
+    
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 600ms;
+    background-color: rgba(41, 40, 40, 0.685);
+    margin-top: 2px;
+    width: 54.3rem;
+
+
+}
+.answer p{
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    color: rgb(255, 255, 255);
+
+}
+.ques-item:target .answer{
+    max-height: 20rem;
+}
+
+.ques-item:target .add-outline{
+    display: none;
+}
+
+.ques-item:target .close-outline{
+    display: block;
+}
+
+
+/* section 6 (footer) */
+#footer{
+    background-color: #000000;
+    height: 400px;
+}
+
+
+
